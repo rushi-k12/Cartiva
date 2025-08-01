@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+      .header {
+        background-color: #000;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      .content {
+        padding: 20px;
+      }
+      .footer {
+        margin-top: 20px;
+        font-size: 0.8em;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>🛒 Cartiva - Order Confirmation</h1>
+    </div>
+    <div class="content">
+      <p>Hi {{customerEmail}},</p>
+      <p>Thanks for shopping with us. Here are your order details:</p>
+      <ul>
+        <li><strong>Order ID:</strong> {{orderId}}</li>
+        <li><strong>Total:</strong> ₹{{total}}</li>
+      </ul>
+      <p>We'll notify you when your order ships.</p>
+    </div>
+    <div class="footer">
+      © 2025 Cartiva. All rights reserved.
+    </div>
+  </body>
+</html>

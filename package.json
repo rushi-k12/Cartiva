@@ -1,0 +1,42 @@
+{
+  "name": "cartiva",
+  "version": "1.0.0",
+  "description": "Cartiva - A MERN Stack E-commerce Website",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "postinstall": "npm-run-all --parallel install:*",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecommerce",
+    "mern",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "Rushikesh Kusuma",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rushi-k12/Cartiva.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rushi-k12/Cartiva/issues"
+  },
+  "homepage": "https://github.com/rushi-k12/Cartiva#readme",
+  "devDependencies": {
+    "cross-env": "^5.2.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "passport": "^0.7.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}

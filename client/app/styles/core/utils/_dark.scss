@@ -1,0 +1,54 @@
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+
+  // General layout
+  .header,
+  .footer,
+  .navbar,
+  .search-bar,
+  .mini-cart,
+  .mini-menu {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+  }
+
+  a {
+    color: #90caf9;
+    &:hover {
+      color: #bbdefb;
+    }
+  }
+
+  input,
+  textarea,
+  select {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 1px solid #444;
+  }
+
+  // ✅ Override product cards to stay dark
+  .product-list .card,
+  .product-card {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border: 1px solid #333;
+  }
+
+  // ✅ BUT keep filters/cards inside sidebar white
+  .sidebar .card,
+  .filters .card {
+    background-color: #ffffff !important;
+    color: #000 !important;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  // Also override specific filter elements if needed
+  .filters .price-slider,
+  .filters .rating-stars {
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+}
